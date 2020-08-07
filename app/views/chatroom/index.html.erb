@@ -13,42 +13,15 @@
               <div class="summary">
                 <div class="ui cards">
                   <div class="card">
-                    
-                      <% @messages.each do |mess| %>
-                      <div class="content">
-                        <%= mess.body %>  <span class="ui label">from:</span>  <%= link_to mess.user.username %><br />
-                        </div>
-                      <% end %>
-                    
+                    <%= render @messages %>
                   </div>
                 </div>
-              
               </div>
-            </div>
-          </div>
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-             
-            </div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-              
-            </div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-              
             </div>
           </div>
         </div>
       </div>
-    </div>
+      
     <div class="extra content">
       <form class="ui reply form">
         <div class="field">
