@@ -14,6 +14,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       flash[:notice] = "User Created"
       redirect_to user_path(@user)
+    end
   end
 
   def show 
