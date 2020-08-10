@@ -68,6 +68,7 @@ end
 group :production do
   # USE POSTGRES as production DB
   gem 'pg'
+  gem 'redis', '3.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
