@@ -26,12 +26,22 @@ scroll_bottom = function() {
 submit_message = function() {
   $('#message_body').on('keydown', function(e) {
     if (e.keyCode == 13 ) {
-      $('button').click();
-      e.target.value = " ";
+      // $('button').click();
+      // e.target.value = "";
+      $(document).bind("ajax:beforeSend", function(){
+        $('#message_body').val('');
+    });
     };
   }); 
 };
 
+// cancel_message = function() {
+//   $('#new_message').on('ajax:send', function() {
+//     $('#message_body').val("").focus();
+//  })
+// }
+  
+  
 
 
 $(document).on('turbolinks:load', function() {
@@ -43,5 +53,6 @@ $(document).on('turbolinks:load', function() {
   });
   scroll_bottom();
   submit_message();
+  // cancel_message();
 })
 
