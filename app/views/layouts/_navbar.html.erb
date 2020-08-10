@@ -23,7 +23,7 @@
       
      <% unless logged_in? %>
        <div class="item">
-          <div class="ui green button">Sign up</div>
+        <%= link_to "Sign up", new_user_path, class: "ui green button"%>
       </div>
      <% end %>
      
