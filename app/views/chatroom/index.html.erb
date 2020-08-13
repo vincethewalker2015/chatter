@@ -1,7 +1,7 @@
-<h2 class="ui center aligned medium icon header">
+<h1 class="ui center aligned medium icon header">
   <i class="comment green outline icon"></i>
-  Chatter
-</h2>
+  <span class="app-title">Let's Chat</span>
+</h1>
 
 <div class="ui two column grid  ">
   <div class="twelve wide column ">
@@ -9,10 +9,10 @@
       <div class="content ">
         <div class="ui feed" >
           <div class="event" >
-            <div class="content" id="scroller" >
-              <div class="summary" >
-                <div class="ui cards">
-                  <div class="raised card" id="message-container">
+            <div class="content " id="scroller" >
+              <div class="summary " >
+                <div class="ui cards ">
+                  <div id="message-container" class="card"%> 
                     <%= render @messages %>
                   </div>
                 </div>
