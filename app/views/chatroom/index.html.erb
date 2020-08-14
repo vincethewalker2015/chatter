@@ -1,26 +1,26 @@
-<h2 class="ui center aligned medium icon header">
+<body class="gray">
+  <h1 class="ui center aligned medium icon header">
   <i class="comment green outline icon"></i>
-  Chatter
-</h2>
+  <span class="app-title">Let's Chat</span>
+</h1>
 
-<div class="ui two column grid  ">
-  <div class="twelve wide column ">
-  <div class="ui fluid  card chatbox ">
-      <div class="content ">
+ 
+  <div class="ui fluid card chatbox gray">
+      <div class="content feeder">
         <div class="ui feed" >
           <div class="event" >
-            <div class="content" id="scroller" >
-              <div class="summary" >
-                <div class="ui cards">
-                  <div class="raised card" id="message-container">
+            <div class="content gray" id="scroller" >
+              <div class="summary " >
+                <div class="ui cards gray">
+                  <div id="message-container " class="card"%> 
                     <%= render @messages %>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+         </div> 
+        
+      
     <div class="extra content">
     <%= form_for(@message, html: {class: "ui reply form", role: "form" }, url: message_path, remote: true) do |f| %> 
       
@@ -33,21 +33,21 @@
         </div>
       <% end %>
     </div>
-  </div>
-</div>
-
-  <div class="four wide column">
-    <div class="ui fluid raised card chatbox">
-      <div class="content">
-        <div class="ui inverted vertical menu">
-          <a class="item">
-            Messages: <span class="counter"><%= @messages.count %></span>
-          </a>
-          <a class="item">
-            Friends: <span class="counter"><%= @users.count %></span>
-          </a>
-        </div>
+    </div>
+    <!--<div class="four wide column info-box"> -->
+      <div class="ui fluid raised card chatbox">
+        <div class="content gray">
+          <div class="ui vertical menu ">
+            <a class="item summary">
+              Messages: <span class="counter"><%= @messages.count %></span>
+            </a>
+            <a class="item summary">
+              Friends: <span class="counter"><%= @users.count %></span>
+            </a>
+          </div>
+        </div >
       </div >
-    </div >
+    </div>
+  <!-- </div> -->
   </div>
-</div>
+</body>
