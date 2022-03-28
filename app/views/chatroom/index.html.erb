@@ -1,17 +1,17 @@
-<body class="gray">
+<body class="">
   <h1 class="ui center aligned medium icon header">
   <i class="comment green outline icon"></i>
   <span class="app-title">Speak Easy</span>
 </h1>
 
  
-  <div class="ui fluid card chatbox gray">
+  <div class="ui fluid card chatbox ">
       <div class="content feeder">
         <div class="ui feed" >
           <div class="event" >
-            <div class="content gray" id="scroller" >
+            <div class="content " id="scroller" >
               <div class="summary " >
-                <div class="ui cards gray">
+                <div class="ui cards">
                   <div id="message-container " class="card"%> 
                     <%= render @messages %>
                   </div>
@@ -36,7 +36,7 @@
     </div>
     <!--<div class="four wide column info-box"> -->
       <div class="ui fluid raised card chatbox">
-        <div class="content gray">
+        <div class="content ">
           <div class="ui vertical menu ">
             <a class="item summary">
               Messages: <span class="counter"><%= @messages.count %></span>
