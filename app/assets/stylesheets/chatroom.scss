@@ -21,16 +21,16 @@
 // Message Labels
 
  .green-bg  {
-  background: #134E5E !important;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #71B280, #134E5E)  !important;  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #71B280, #134E5E) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #5cb85c !important;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #71B280, #134E5E)  !important;  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #71B280, #134E5E) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 
   color: #fff !important;
     .label, .chat {
-      background: #134E5E !important;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #71B280, #134E5E)  !important;  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #71B280, #134E5E) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: #5cb85c !important;  /* fallback for old browsers */
+      // background: -webkit-linear-gradient(to right, #71B280, #134E5E)  !important;  /* Chrome 10-25, Safari 5.1-6 */
+      // background: linear-gradient(to right, #71B280, #134E5E) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
       color: #fff !important;
       border: 2px solid #fff !important;
@@ -41,16 +41,16 @@
 
 
 .blue-bg {
-  background: #0575E6 !important;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #021B79, #0575E6) !important;  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #021B79, #0575E6) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0275d8 !important;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #021B79, #0575E6) !important;  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #021B79, #0575E6) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
   color: #fff !important;
   .label, .chat {
-    background: #0575E6 !important;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #021B79, #0575E6) !important;  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #021B79, #0575E6) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0275d8 !important;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #021B79, #0575E6) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #021B79, #0575E6) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     color: #fff !important;
     border: 2px solid #fff !important;
@@ -62,10 +62,14 @@
   
 }
 
+.input {
+  border: 1px solid #0275d8
+}
+
 .summary {
-  background: #0575E6 !important;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #021B79, #0575E6) !important;  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #021B79, #0575E6) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0275d8 !important;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #021B79, #0575E6) !important;  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #021B79, #0575E6) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   color: #fff !important;
   border: 2px solid #fff !important;
