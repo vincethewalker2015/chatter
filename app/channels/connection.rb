@@ -1,22 +1,24 @@
 module ApplicationCable
 	class Connection < ActionCable::Connection::Base
-	identified_by :current_user 
+		identified_by :current_user 
 
-	def connect 
-		self.current_user = find_current_user
-	end
+			def connect 
+				self.current_user = find_current_user
+				logger.add_tags 'ActionCable', current_user.name
+			end
 
-	def disconnect 
+			def disconnect 
 
-	end
+			end
 
-	protected 
-	def find_current_user 
-		if current_user = User.find_by(id: cookies.signed[:user_id])
-			current_user
-		else
-			reject_unauthorized_connection 
-		end
-		end
+			protected 
+
+			def find_current_user 
+				if current_user == User.find_by(id: cookies.signed[:user_id])
+					current_user
+				else
+					reject_unauthorized_connection 
+				end
+			end
 	end
 end
