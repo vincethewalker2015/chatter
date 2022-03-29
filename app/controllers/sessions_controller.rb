@@ -7,8 +7,8 @@ class SessionsController < ApplicationController
   def create 
     user = User.find_by(username: params[:session][:username].downcase)
       if user && user.authenticate(params[:session][:password])
-        session[:user_id] = current_user.id
-        flash[:success] = "You are Logged in" 
+        session[:user_id] = user.id
+        cookies.signed[:user_id] = user.id
         redirect_to chatroom_path
       else
         flash.now[:error] = "That didn't work! Try again"
