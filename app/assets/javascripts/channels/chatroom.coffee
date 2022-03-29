@@ -8,6 +8,9 @@ App.chatroom = App.cable.subscriptions.create "ChatroomChannel",
   received: (data) ->
     # alert data.foo
     $('#message-container').append data.mod_message # mod_message from messages_controller:9
-    # scroll_bottom();
+    scroll_bottom();
+    return
   
-
+  jQuery(document).on 'turbolinks:load', ->
+    scroll_bottom();
+    return
